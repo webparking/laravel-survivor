@@ -1,0 +1,33 @@
+{
+    "name": "influendo/laravel-survivor",
+    "description": "Doesn't let your tokens expire",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Boris Strahija",
+            "email": "boris@creolab.hr"
+        },
+        {
+            "name": "Influendo",
+            "email": "influendo@influendo.hr"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Influendo\\LaravelSurvivor\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.5.0",
+        "illuminate/support": "~5.1",
+        "illuminate/routing": "~5.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.*"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Influendo\\LaravelSurvivor\\Tests\\": "tests/"
+        }
+    }
+}
