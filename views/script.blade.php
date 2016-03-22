@@ -8,7 +8,7 @@ window.LaravelSurvivor = {
         if (response && response._token) {
             window.LaravelSurvivor.token = response._token;
             var meta   = document.querySelectorAll('meta[name=csrf-token]');
-            var inputs = document.querySelectorAll('input[name=_token]');
+            var inputs = document.querySelectorAll('{{ $input_elements }}');
 
             if (meta) {
                 meta[0].setAttribute("content", response._token);
