@@ -29,5 +29,14 @@
         "psr-4": {
             "Influendo\\LaravelSurvivor\\Tests\\": "tests/"
         }
-    }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Influendo\\LaravelSurvivor\\SurvivorServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
