@@ -10,13 +10,16 @@ The purpose of this library is to keep the session from expiring, but also to ke
 
     composer require influendo/laravel-survivor
 
-2. Add the service provider to your **config\app.php** file:
-
-    Influendo\LaravelSurvivor\SurvivorServiceProvider::class,
-
-3. Add the script to your view. You can also add it to your footer.blade.php partial or your main layout file (by your own preference):
+2. Add the script to your view. You can also add it to your footer.blade.php partial or your main layout file (by your own preference):
 
     {!! survivor() !!}
+
+## Laravel 5.4 or older
+
+If you're running Laravel 5.4 or older, you need to manually register the service provider.
+So just add the service provider to your **config\app.php** file:
+
+    Influendo\LaravelSurvivor\SurvivorServiceProvider::class,
 
 ## Configuration
 
